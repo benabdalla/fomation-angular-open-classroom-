@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'formatonAngularOpenClassRoom';
+  title = 'formaton Angular Open ClassRoom';
+  isauth=false;
+  constructor(){
+    setTimeout(
+    ()=>{
+      this.isauth=true;
+
+    },4000
+    );
+  }
+
+  onAllumer(){
+    console.log(this.isauth);
+  }
+
 }
